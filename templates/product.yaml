@@ -6,7 +6,7 @@ metadata:
 spec:
   apis:
     apis:
-      - name: api1
+      - name: {{ .Values.nameapi }}
   definition:
     info:
       name: demo

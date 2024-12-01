@@ -21,9 +21,7 @@ spec:
     enabled: true
   replicas: 1
   version: '12.0'
-  barURL:
-    - >-
-      https://db-banbif-dash.app-banbif:3443/v1/directories/ExampleValidateJSON.regenerated?b617b73a-c52e-4924-a2b8-f3054d7ada8b
+  barURL: {{ .Values.urlbar }}
   configurations: []
   forceFlowsHTTPS:
     enabled: true
