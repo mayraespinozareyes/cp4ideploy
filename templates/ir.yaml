@@ -23,7 +23,8 @@ spec:
     enabled: true
   replicas: 1
   version: '12.0'
-  barURL: {{ .Values.urlbar }}
+    - >-
+      https://db-01-quickstart-3-dash.demo-banreservas:3443/v1/directories/CountryAPIproject.generated?2cfaa42a-f747-4d98-8be8-37a111c56f6c
   configurations: []
   forceFlowsHTTPS:
     enabled: true
