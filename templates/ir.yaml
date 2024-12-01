@@ -2,6 +2,8 @@ apiVersion: appconnect.ibm.com/v1beta1
 kind: IntegrationRuntime
 metadata:
   name: {{ .Values.nameir }}
+  labels:
+    backup.appconnect.ibm.com/component: integrationruntime
   namespace: {{ .Values.namespace }}
 spec:
   license:
