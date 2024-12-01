@@ -6,6 +6,10 @@ metadata:
 spec:
   availability:
     type: SingleInstance
+  independentResources:
+    selector:
+      matchLabels:
+        assembly.integration.ibm.com/{{ .Values.namespace }}.{{ .Values.namecanvas }}: 'true'
   license:
     accept: true
     license: L-JTPV-KYG8TF
