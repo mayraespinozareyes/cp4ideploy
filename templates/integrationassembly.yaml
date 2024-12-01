@@ -1,0 +1,20 @@
+apiVersion: integration.ibm.com/v1beta1
+kind: IntegrationAssembly
+metadata:
+  name: {{ .Values.namecanvas }}
+  namespace: {{ .Values.namespace }}
+spec:
+  availability:
+    type: SingleInstance
+  license:
+    accept: true
+    license: L-JTPV-KYG8TF
+    use: CloudPakForIntegrationNonProduction
+  managedInstances:
+    list: []
+  managedIntegrations:
+    list: []
+  storage:
+    readWriteOnce:
+      class: ocs-storagecluster-ceph-rbd
+  version: 16.1.0

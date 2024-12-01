@@ -1,0 +1,29 @@
+apiVersion: apiconnect.ibm.com/v1beta1
+kind: Product
+metadata:
+  name: {{ .Values.nameproduct }}
+  namespace: {{ .Values.namespace }}
+spec:
+  apis:
+    apis:
+      - name: api1
+  definition:
+    info:
+      name: demo
+      title: ''
+      version: '1.0'
+    plans:
+      default-plan:
+        approval: false
+        description: Default Plan
+        rate-limits:
+          default:
+            value: 100/1hour
+        title: Default Plan
+    product: 1.0.0
+  share:
+    apim:
+      catalog: test
+      credentialsSecret: {{ .Values.namesecret }}
+      providerOrg: {{ .Values.nameorg }}
+  state: Staged
