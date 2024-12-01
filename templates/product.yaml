@@ -3,6 +3,8 @@ kind: Product
 metadata:
   name: {{ .Values.nameproduct }}
   namespace: {{ .Values.namespace }}
+  labels:
+    assembly.integration.ibm.com/{{ .Values.namespace }}.{{ .Values.namecanvas }}: 'true'
 spec:
   apis:
     apis:

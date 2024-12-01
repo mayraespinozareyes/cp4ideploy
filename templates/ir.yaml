@@ -4,7 +4,7 @@ metadata:
   name: {{ .Values.nameir }}
   labels:
     backup.appconnect.ibm.com/component: integrationruntime
-    assembly.integration.ibm.com/{{ .Values.namespace }}.test: 'true'
+    assembly.integration.ibm.com/{{ .Values.namespace }}.{{ .Values.namecanvas }}: 'true'
   namespace: {{ .Values.namespace }}
 spec:
   license:
