@@ -12,7 +12,7 @@ spec:
   definition:
     info:
       name: demo
-      title: ''
+      title: 'demo'
       version: '1.0'
     plans:
       default-plan:
