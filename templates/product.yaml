@@ -28,4 +28,5 @@ spec:
       catalog: test
       credentialsSecret: {{ .Values.namesecret }}
       providerOrg: {{ .Values.nameorg }}
-  state: Staged
+      space: {{ .Values.space }}
+  state: Published

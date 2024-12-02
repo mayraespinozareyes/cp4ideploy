@@ -27,6 +27,7 @@ spec:
   barURL:
     - >-
       https://db-01-quickstart-dash.cp4i:3443/v1/directories/CountryAPIproject.generated?ce773567-8af1-43c8-ada9-422f2f576078
-  configurations: []
+  configurations:
+    - {{ .Values.nameir }}-ir-adminssl
   forceFlowsHTTPS:
     enabled: true
