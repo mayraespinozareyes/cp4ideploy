@@ -1,0 +1,75 @@
+apiVersion: mq.ibm.com/v1beta1
+kind: QueueManager
+metadata:
+  name: {{ .Values.nameqm }}
+  namespace: {{ .Values.namespace }}
+  labels:
+    assembly.integration.ibm.com/{{ .Values.namespace }}.{{ .Values.namecanvas }}: 'true'
+spec:
+  license:
+    accept: true
+    license: L-JTPV-KYG8TF
+    metric: VirtualProcessorCore
+    use: NonProduction
+  queueManager:
+    availability:
+      type: SingleInstance
+      updateStrategy: RollingUpdate
+    debug: false
+    imagePullPolicy: IfNotPresent
+    livenessProbe:
+      failureThreshold: 1
+      initialDelaySeconds: 90
+      periodSeconds: 10
+      successThreshold: 1
+      timeoutSeconds: 5
+    logFormat: Basic
+    metrics:
+      enabled: true
+    name: CUSTOM
+    readinessProbe:
+      failureThreshold: 1
+      initialDelaySeconds: 10
+      periodSeconds: 5
+      successThreshold: 1
+      timeoutSeconds: 3
+    resources:
+      limits:
+        cpu: '1'
+        memory: 1Gi
+      requests:
+        cpu: '1'
+        memory: 1Gi
+    route:
+      enabled: true
+    storage:
+      allowVolumeExpansion: false
+      persistedData:
+        enabled: false
+      queueManager:
+        size: 2Gi
+        type: persistent-claim
+      recoveryLogs:
+        enabled: false
+      scratch: {}
+      tmp: {}
+  securityContext:
+    initVolumeAsRoot: false
+    readOnlyRootFilesystem: false
+  telemetry:
+    tracing:
+      instana:
+        enabled: false
+        protocol: http
+  terminationGracePeriodSeconds: 30
+  tracing:
+    agent: {}
+    collector: {}
+    enabled: false
+    namespace: ''
+  version: 9.4.0.11-r2
+  web:
+    console:
+      authentication: {}
+      authorization: {}
+    enabled: false
