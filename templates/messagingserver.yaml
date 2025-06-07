@@ -1,0 +1,17 @@
+apiVersion: integration.ibm.com/v1beta1
+kind: MessagingServer
+metadata:
+  name: {{ .Values.namems }}
+  namespace: {{ .Values.namespace }}
+  labels:
+    assembly.integration.ibm.com/{{ .Values.namespace }}.{{ .Values.namecanvas }}: 'true'
+spec:
+  license:
+    accept: true
+    license: L-JTPV-KYG8TF
+    use: CloudPakForIntegrationNonProduction
+  queueManager:
+    name: {{ .Values.nameqm }}
+    storage:
+      defaultClass: ocs-storagecluster-ceph-rbd
+  version: 16.1.0
