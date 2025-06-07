@@ -20,3 +20,7 @@ oc get ManagementCluster $INSTANCE_MC -o json -n cp4i | jq -r '.status.endpoints
 --Certificado (secretName)
 
 oc get secret $SECRET_NAME_MGMT -o json -n cp4i | jq -r '.data["ca.crt"]'
+
+--Secret (Openshift GitOps)
+
+openshift-gitops-cluster
