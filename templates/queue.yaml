@@ -1,0 +1,12 @@
+apiVersion: integration.ibm.com/v1beta1
+kind: MessagingQueue
+metadata:
+  name: {{ .Values.namequeue }}
+  namespace: {{ .Values.namespace }}
+  labels:
+    assembly.integration.ibm.com/{{ .Values.namespace }}.{{ .Values.namecanvas }}: 'true'
+spec:
+  messagingServer:
+    name: {{ .Values.namems }}
+  queue:
+    type: Local

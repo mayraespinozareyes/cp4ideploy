@@ -1,0 +1,12 @@
+apiVersion: integration.ibm.com/v1beta1
+kind: MessagingChannel
+metadata:
+  name: {{ .Values.namechannel }}
+  namespace: {{ .Values.namespace }}
+  labels:
+    assembly.integration.ibm.com/{{ .Values.namespace }}.{{ .Values.namecanvas }}: 'true'
+spec:
+  channel:
+    type: ServerConnMTLS
+  messagingServer:
+    name: {{ .Values.namems }}
