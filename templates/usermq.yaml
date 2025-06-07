@@ -1,0 +1,22 @@
+apiVersion: integration.ibm.com/v1beta1
+kind: MessagingUser
+metadata:
+  name: {{ .Values.nameusermq }}
+  namespace: {{ .Values.namespace }}
+  labels:
+    assembly.integration.ibm.com/{{ .Values.namespace }}.{{ .Values.namecanvas }}: 'true'
+spec:
+  configurations:
+    - name: {{ .Values.nameconfigurationmq }}
+  user:
+    channel:
+      name: {{ .Values.namechannel }}
+    name: {{ .Values.nameusermq }}
+    queues:
+      - auth:
+          - BROWSE
+          - GET
+          - INQ
+          - PUT
+          - PASSALL
+        name: {{ .Values.namequeue }}
