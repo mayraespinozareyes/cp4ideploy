@@ -1,7 +1,7 @@
 apiVersion: appconnect.ibm.com/v1beta1
 kind: IntegrationRuntime
 metadata:
-  name: {{ .Values.nameir }}
+  name: {{ .Values.nameintegrationruntime }}
   labels:
     backup.appconnect.ibm.com/component: integrationruntime
     assembly.integration.ibm.com/{{ .Values.namespace }}.{{ .Values.namecanvas }}: 'true'
@@ -28,6 +28,6 @@ spec:
     - >-
       https://db-01-quickstart-dash.cp4i:3443/v1/directories/CountryAPIproject.generated?ce773567-8af1-43c8-ada9-422f2f576078
   configurations:
-    - {{ .Values.nameir }}-ir-adminssl
+    - {{ .Values.nameintegrationruntime }}-ir-adminssl
   forceFlowsHTTPS:
     enabled: true

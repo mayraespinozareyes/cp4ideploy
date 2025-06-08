@@ -8,7 +8,7 @@ metadata:
 spec:
   definition:
     integrationRuntime:
-      name: {{ .Values.nameir }}
+      name: {{ .Values.nameintegrationruntime }}
   share:
     apim:
       credentialsSecret: {{ .Values.namesecret }}

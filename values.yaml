@@ -1,18 +1,26 @@
-nameir: "test"
-nameapi: "test"
-nameproduct: "test"
+##PROJECT (CANVAS)
+namecanvas: "org-int-dest"
+namespace: "demo-ns"
+namedashboardace: "demo-db"
+
+##MQ
+
+nameqm: "demo-qm"
+namems: "demo-ms"
+namequeue: "demo-q"
+namechannel: "demo-ch"
+nameusermq: "demo-umq"
+
+##ACE
+nameintegrationruntime: "country-b-01-ir"
 urlbar: "https://db-01-quickstart-3-dash.demo-banreservas:3443/v1/directories/CountryAPIproject.generated?2cfaa42a-f747-4d98-8be8-37a111c56f6c"
-namecanvas: ""
-namespace: "test01"
-namesecret: "test"
-nameorg: "test"
-urlmng: ""
-api_key: ""
-trusted_cert: ""
-space: "test"
-nameqm: "qmtest"
-namems: "mstest"
-namequeue: "qtest"
-namechannel: "chtest"
 nameconfigurationmq: "c1" #Fijo
-nameusermq: "umqtest2"
+
+##APIC
+nameapi: "country-b-01"
+nameproduct: "demo-product"
+nameorg: "demo-org" #CLIENT+INT
+space: "demo-space"
+namesecret: "connectionapic" #SECRET CONFIGURADO EN OPENSHIFT PREVIAMENTE
+
+
