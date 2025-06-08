@@ -9,7 +9,7 @@ nameqm: "demo-qm"
 namems: "demo-ms"
 namequeue: "demo-q"
 namechannel: "demo-ch"
-nameusermq: "demo-umq"
+nameusermq: "demoumq" #no puede tener caracteres
 
 ##ACE
 nameintegrationruntime: "country-b-01-ir"
