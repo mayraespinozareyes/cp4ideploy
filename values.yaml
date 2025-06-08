@@ -6,9 +6,9 @@ namedashboardace: "demo-db"
 ##MQ
 
 nameqm: "demo-qm"
-namems: "demo-ms"
-namequeue: "demo-q"
-namechannel: "demo-ch"
+namems: "demoms" #no puede tener caracteres
+namequeue: "demoq" #no puede tener caracteres
+namechannel: "democh" #no puede tener caracteres
 nameusermq: "demoumq" #no puede tener caracteres
 
 ##ACE
