@@ -27,7 +27,7 @@ spec:
   barURL:
     - >-
       https://demo-db-dash.demo-ns:3443/v1/directories/CountryAPIproject.generated?92a946c2-6468-49bc-9369-a9475fecb6c2
-  configurations:
-    - {{ .Values.nameintegrationruntime }}-ir-adminssl
+#  configurations:
+#    - {{ .Values.nameintegrationruntime }}-ir-adminssl
   forceFlowsHTTPS:
     enabled: true
