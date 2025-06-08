@@ -3,13 +3,13 @@ namecanvas: "org-int-dest"
 namespace: "demo-ns"
 namedashboardace: "demo-db"
 
-##MQ
+##MQ - los nombres no puede tener caracteres
 
-nameqm: "demo-qm"
-namems: "demoms" #no puede tener caracteres
-namequeue: "demoq" #no puede tener caracteres
-namechannel: "democh" #no puede tener caracteres
-nameusermq: "demoumq" #no puede tener caracteres
+nameqm: "demoqm"
+namems: "demoms" 
+namequeue: "demoq"
+namechannel: "democh"
+nameusermq: "demoumq"
 
 ##ACE
 nameintegrationruntime: "country-b-01-ir"
