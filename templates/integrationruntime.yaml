@@ -5,6 +5,7 @@ metadata:
   labels:
     backup.appconnect.ibm.com/component: integrationruntime
     assembly.integration.ibm.com/{{ .Values.namespace }}.{{ .Values.namecanvas }}: 'true'
+#    {{ .Values.namecanvas }}.{{ .Values.namespace }}: 'true'
   namespace: {{ .Values.namespace }}
 spec:
   license:
