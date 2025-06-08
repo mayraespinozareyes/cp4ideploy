@@ -72,4 +72,4 @@ spec:
     console:
       authentication: {}
       authorization: {}
-    enabled: false
+    enabled: true
