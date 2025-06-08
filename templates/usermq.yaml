@@ -6,8 +6,8 @@ metadata:
   labels:
     assembly.integration.ibm.com/{{ .Values.namespace }}.{{ .Values.namecanvas }}: 'true'
 spec:
-#  configurations:
-#    - name: {{ .Values.nameconfigurationmq }}
+  configurations:
+    - name: {{ .Values.nameconfigurationmq }}
   user:
     channel:
       name: {{ .Values.namechannel }}

@@ -1,3 +1,9 @@
+
+#PRE-REQUISITO
+namesecret: "connectionapic" #SECRET CONFIGURADO EN OPENSHIFT PREVIAMENTE
+secretmqconnection: "accounts.yaml-test" #SECRET CONFIGURADO EN OPENSHIFT PREVIAMENTE
+
+
 ##PROJECT (CANVAS)
 namecanvas: "org-int-dest"
 namespace: "demo-ns"
@@ -9,7 +15,7 @@ nameqm: "demoqm"
 namems: "demoms" 
 namequeue: "demoq"
 namechannel: "democh"
-nameusermq: "demoumq"
+nameusermq: "demoapp"
 
 ##ACE
 nameintegrationruntime: "country-b-02"
@@ -21,4 +27,8 @@ nameapi: "country-b-01"
 nameproduct: "demo-product"
 nameorg: "demo-org" #CLIENT+INT
 space: "demo-space"
-namesecret: "connectionapic" #SECRET CONFIGURADO EN OPENSHIFT PREVIAMENTE
+
+
+
+
+

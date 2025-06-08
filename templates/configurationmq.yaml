@@ -7,5 +7,6 @@ metadata:
 #    {{ .Values.namecanvas }}.{{ .Values.namespace }}: 'true'
 apiVersion: appconnect.ibm.com/v1beta1
 spec:
+  secretName: {{ .Values.secretmqconnection }}
   type: accounts
-  secretName: {{ .Values.nameusermq }}-client-cert
+  version: 12.0.12-r12
