@@ -1,0 +1,11 @@
+kind: Configuration
+metadata:
+  name: {{ .Values.nameconfigurationmq }}
+  namespace: {{ .Values.namespace }}
+  labels:
+    assembly.integration.ibm.com/{{ .Values.namespace }}.{{ .Values.namecanvas }}: 'true'
+#    {{ .Values.namecanvas }}.{{ .Values.namespace }}: 'true'
+apiVersion: appconnect.ibm.com/v1beta1
+spec:
+  type: accounts
+  secretName: {{ .Values.nameusermq }}-client-cert
