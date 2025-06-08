@@ -52,3 +52,7 @@ type: Opaque
 --Secret (Openshift GitOps)
 
 openshift-gitops-cluster
+
+--permitir que openshift gitops administre el namespace
+
+oc label namespace demo-ns argocd.argoproj.io/managed-by=openshift-gitops

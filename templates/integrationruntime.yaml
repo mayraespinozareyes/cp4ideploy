@@ -26,7 +26,7 @@ spec:
   version: '12.0'
   barURL:
     - >-
-      https://db-01-quickstart-dash.cp4i:3443/v1/directories/CountryAPIproject.generated?ce773567-8af1-43c8-ada9-422f2f576078
+      https://demo-db-dash.demo-ns:3443/v1/directories/CountryAPIproject.generated?92a946c2-6468-49bc-9369-a9475fecb6c2
   configurations:
     - {{ .Values.nameintegrationruntime }}-ir-adminssl
   forceFlowsHTTPS:
