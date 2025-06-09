@@ -1,7 +1,11 @@
 
 #PRE-REQUISITO
 namesecret: "connectionapic" #SECRET CONFIGURADO EN OPENSHIFT PREVIAMENTE
-secretmqconnection: "accounts.yaml-test" #SECRET CONFIGURADO EN OPENSHIFT PREVIAMENTE
+
+#EN APIC
+nameorg: "demo-org" #CLIENT+INT
+#Crear catalogo
+space: "demo-space"
 
 
 ##PROJECT (CANVAS)
@@ -15,7 +19,7 @@ nameqm: "demoqm"
 namems: "demoms" 
 namequeue: "demoq"
 namechannel: "democh"
-nameusermq: "demoapp"
+
 
 ##ACE
 nameintegrationruntime: "country-b-02"
@@ -25,10 +29,10 @@ nameconfigurationmq: "democonfigmq"
 ##APIC
 nameapi: "country-b-01"
 nameproduct: "demo-product"
-nameorg: "demo-org" #CLIENT+INT
-space: "demo-space"
 
 
-
+#DT
+secretmqconnection: "accounts.yaml-test" #SECRET CONFIGURADO EN OPENSHIFT PREVIAMENTE
+nameusermq: "demoapp"
 
 

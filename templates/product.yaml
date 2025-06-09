@@ -29,4 +29,5 @@ spec:
       credentialsSecret: {{ .Values.namesecret }}
       providerOrg: {{ .Values.nameorg }}
       space: {{ .Values.space }}
+  migrateSubscriptions: true
   state: Published
